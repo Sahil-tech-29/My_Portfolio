@@ -16,13 +16,14 @@ html{scroll-behavior:smooth;}
 
 body{
   font-family:'Poppins',sans-serif;
-  background:linear-gradient(to bottom,#ffffff,#fff7f7);
+  background:linear-gradient(to bottom,#ffffff,#f0f7ff);
   color:#1f2937;
 }
 
 :root{
-  --primary:#ef4444;
-  --primary-dark:#dc2626;
+  --primary:#2563eb;
+  --accent:#3b82f6;
+  --light:#60a5fa;
   --gray:#6b7280;
 }
 
@@ -30,14 +31,14 @@ body{
 
 .nav-glass{
   backdrop-filter:blur(16px);
-  background:rgba(255,255,255,.85);
-  border-bottom:1px solid #f1f5f9;
+  background:rgba(255,255,255,.9);
+  border-bottom:1px solid #e5e7eb;
 }
 
-/* Gradient Heading */
+/* Gradient Headings */
 
 .gradient-text{
-  background:linear-gradient(135deg,#ef4444,#f87171);
+  background:linear-gradient(135deg,#2563eb,#3b82f6,#60a5fa);
   background-clip:text;
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
@@ -51,31 +52,30 @@ body{
   border:1px solid #e5e7eb;
   border-radius:16px;
   transition:all .3s ease;
-  position:relative;
 }
 
-/* Hover effect */
+/* Card Hover */
 
 .project-card:hover,
 .about-card:hover{
   transform:translateY(-6px);
-  border-color:#ef4444;
-  box-shadow:0 10px 30px rgba(239,68,68,.15);
+  border-color:#2563eb;
+  box-shadow:0 12px 30px rgba(37,99,235,.15);
 }
 
 /* Buttons */
 
 .btn-primary{
-  background:#ef4444;
+  background:linear-gradient(135deg,#2563eb,#3b82f6);
   color:white;
-  box-shadow:0 6px 18px rgba(239,68,68,.2);
+  box-shadow:0 8px 20px rgba(37,99,235,.25);
   transition:.25s;
 }
 
 .btn-primary:hover{
-  background:#dc2626;
+  background:linear-gradient(135deg,#1d4ed8,#2563eb);
   transform:translateY(-2px);
-  box-shadow:0 12px 25px rgba(239,68,68,.25);
+  box-shadow:0 12px 25px rgba(37,99,235,.35);
 }
 
 /* Cursor */
@@ -93,7 +93,7 @@ body{
   50%{opacity:0;}
 }
 
-/* Reveal animation */
+/* Reveal Animation */
 
 .reveal{
   opacity:0;
@@ -114,11 +114,21 @@ body{
 }
 
 .project-card a:hover{
-  color:#ef4444;
+  color:#2563eb;
   text-decoration:underline;
 }
 
-/* Mobile menu */
+/* Section Backgrounds */
+
+#projects{
+  background:#f8fbff;
+}
+
+#certifications{
+  background:#f5f9ff;
+}
+
+/* Mobile Menu */
 
 .mobile-menu{
   display:none;
@@ -152,11 +162,6 @@ body{
   transition:.3s;
 }
 
-#projects{
-  background:#f8fafc; /* light neutral grey */
-}
-
-
 @media(min-width:768px){
   .hamburger{display:none;}
 }
@@ -173,10 +178,10 @@ body{
     </a>
 
     <div class="hidden md:flex gap-8 font-medium items-center">
-      <a href="#about" class="hover:text-red-600 transition">About</a>
-      <a href="#hackathon" class="hover:text-red-600 transition">Mentoring</a>
-      <a href="#projects" class="hover:text-red-600 transition">Projects</a>
-      <a href="#certifications" class="hover:text-red-600 transition">Certifications</a>
+      <a href="#about" class="hover:text-blue-600 transition">About</a>
+      <a href="#hackathon" class="hover:text-blue-600 transition">Mentoring</a>
+      <a href="#projects" class="hover:text-blue-600 transition">Projects</a>
+      <a href="#certifications" class="hover:text-blue-600 transition">Certifications</a>
       <a href="#contact" class="px-6 py-2 rounded-full text-white font-medium btn-primary">Get In Touch</a>
     </div>
 
@@ -233,7 +238,7 @@ body{
     
     <div class="about-card bg-white rounded-2xl p-8 md:p-12 shadow-xl reveal">
       <p class="text-gray-700 text-lg leading-relaxed mb-6">
-        I am <span class="font-semibold text-red-600">Sahil </span>, a Computer Science and Engineering student at Guru Nanak Dev University with a strong interest in Artificial Intelligence, Machine Learning, and Data Analytics. I enjoy building intelligent systems that transform data into meaningful insights and practical solutions.
+        I am <span class="font-semibold text-blue-600">Sahil </span>, a Computer Science and Engineering student at Guru Nanak Dev University with a strong interest in Artificial Intelligence, Machine Learning, and Data Analytics. I enjoy building intelligent systems that transform data into meaningful insights and practical solutions.
       </p>
       
       <p class="text-gray-700 text-lg leading-relaxed mb-6">
@@ -292,9 +297,9 @@ body{
           The platform provides trend visualization and health insights for users.
         </p>
         <div class="text-sm space-x-4">
-          <a href="https://github.com/Sahil-tech-29/Air-Quality-Level-Prediction.git" target="_blank" class="text-red-600 font-medium">GitHub</a>
-          <a href="https://drive.google.com/drive/folders/1AYwKAHTRoexLbVajInIQ_w9ukPyE_O0U?usp=drive_link" target="_blank" class="text-red-600 font-medium">Docs</a>
-          <a href="https://drive.google.com/file/d/1vSFI2xWxLGRDcF-EyU26skhceicM8KyI/view?usp=drive_link" target="_blank" class="text-red-600 font-medium">Video</a>
+          <a href="https://github.com/Sahil-tech-29/Air-Quality-Level-Prediction.git" target="_blank" class="text-blue-600 font-medium">GitHub</a>
+          <a href="https://drive.google.com/drive/folders/1AYwKAHTRoexLbVajInIQ_w9ukPyE_O0U?usp=drive_link" target="_blank" class="text-blue-600 font-medium">Docs</a>
+          <a href="https://drive.google.com/file/d/1vSFI2xWxLGRDcF-EyU26skhceicM8KyI/view?usp=drive_link" target="_blank" class="text-blue-600 font-medium">Video</a>
         </div>
       </div>
 
@@ -307,9 +312,9 @@ body{
           intelligent medical guidance using machine learning and AI tools.
         </p>
         <div class="text-sm space-x-4">
-          <a href="https://github.com/Sahil-tech-29/Medisense-AI.git" target="_blank" class="text-red-600 font-medium">GitHub</a>
-          <a href="https://drive.google.com/drive/folders/10VZ2MmX0GHqb-Tq56S-UM7F7sjqOJ9Fn?usp=drive_link" target="_blank" class="text-red-600 font-medium">Docs</a>
-          <a href="https://drive.google.com/drive/folders/10VZ2MmX0GHqb-Tq56S-UM7F7sjqOJ9Fn?usp=drive_link" target="_blank" class="text-red-600 font-medium">Video</a>
+          <a href="https://github.com/Sahil-tech-29/Medisense-AI.git" target="_blank" class="text-blue-600 font-medium">GitHub</a>
+          <a href="https://drive.google.com/drive/folders/10VZ2MmX0GHqb-Tq56S-UM7F7sjqOJ9Fn?usp=drive_link" target="_blank" class="text-blue-600 font-medium">Docs</a>
+          <a href="https://drive.google.com/drive/folders/10VZ2MmX0GHqb-Tq56S-UM7F7sjqOJ9Fn?usp=drive_link" target="_blank" class="text-blue-600 font-medium">Video</a>
         </div>
       </div>
 
@@ -322,9 +327,9 @@ body{
           identify crop issues early and improve yield.
         </p>
         <div class="text-sm space-x-4">
-          <a href="#" target="_blank" class="text-red-600 font-medium">GitHub</a>
-          <a href="#" target="_blank" class="text-red-600 font-medium">Docs</a>
-          <a href="#" target="_blank" class="text-red-600 font-medium">Video</a>
+          <a href="#" target="_blank" class="text-blue-600 font-medium">GitHub</a>
+          <a href="#" target="_blank" class="text-blue-600 font-medium">Docs</a>
+          <a href="#" target="_blank" class="text-blue-600 font-medium">Video</a>
         </div>
       </div>
 
@@ -338,9 +343,9 @@ body{
           dashboards for real-time insights and business decision-making.
         </p>
         <div class="text-sm space-x-4">
-          <a href="https://github.com/Sahil-tech-29/customer-churn-prediction-.git" target="_blank" class="text-red-600 font-medium">GitHub</a>
-          <a href="#" target="_blank" class="text-red-600 font-medium">Docs</a>
-          <a href="#" target="_blank" class="text-red-600 font-medium">Video</a>
+          <a href="https://github.com/Sahil-tech-29/customer-churn-prediction-.git" target="_blank" class="text-blue-600 font-medium">GitHub</a>
+          <a href="#" target="_blank" class="text-blue-600 font-medium">Docs</a>
+          <a href="#" target="_blank" class="text-blue-600 font-medium">Video</a>
         </div>
       </div>
 
@@ -461,7 +466,7 @@ body{
       <!-- LinkedIn -->
       <a href="https://www.linkedin.com/in/sahil-bhardwaj-24b2082b6/" 
          target="_blank"
-         class="px-8 py-3 rounded-full border font-medium border-red-600 text-red-600 hover:bg-red-50 transition hover:scale-105">
+         class="px-8 py-3 rounded-full border font-medium border-blue-600 text-blue-600 hover:bg-blue-50 transition hover:scale-105">
          LinkedIn
       </a>
 
